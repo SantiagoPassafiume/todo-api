@@ -18,5 +18,6 @@ var todos = []todo{
 
 func main(){
 	router := gin.Default()
+	router.GET("/todos")
 	router.Run("localhost:9090")
 }
