@@ -1,9 +1,9 @@
 package main
 
 type todo struct {
-	ID	string
-	Item	string
-	Completed bool
+	ID	string 	`json:"id"`
+	Item	string `json:"title"`
+	Completed bool `json:"completed"`
 }
 
 var todos = []todo{
